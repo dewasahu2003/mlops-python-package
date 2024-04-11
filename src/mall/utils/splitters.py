@@ -10,7 +10,7 @@ import numpy.typing as npt
 import pydantic as pdt
 from sklearn import model_selection
 
-from bikes.core import schemas
+from mall.core import schemas
 
 # %% TYPES
 
@@ -107,8 +107,8 @@ class TimeSeriesSplitter(Splitter):
     KIND: T.Literal["TimeSeriesSplitter"] = "TimeSeriesSplitter"
 
     gap: int = 0
-    n_splits: int = 4
-    test_size: int | float = 24 * 30 * 2  # 2 months
+    n_splits: int = 2
+    test_size: int | float = 0.25  # 2 months
 
     @T.override
     def split(

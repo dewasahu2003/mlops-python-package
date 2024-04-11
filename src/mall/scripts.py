@@ -6,8 +6,8 @@ import argparse
 import json
 import sys
 
-from bikes import settings
-from bikes.io import configs
+from mall import settings
+from mall.io import configs
 
 # %% PARSERS
 

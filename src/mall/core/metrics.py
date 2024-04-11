@@ -8,7 +8,7 @@ import typing as T
 import pydantic as pdt
 from sklearn import metrics
 
-from bikes.core import models, schemas
+from mall.core import models, schemas
 
 # %% METRICS
 

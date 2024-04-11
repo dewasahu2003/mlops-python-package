@@ -1,7 +1,7 @@
 # %% IMPORTS
 
-from bikes.io import services
-from bikes.jobs import base
+from mall.io import services
+from mall.jobs import base
 
 # %% JOBS
 

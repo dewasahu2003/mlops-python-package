@@ -6,9 +6,9 @@ import typing as T
 
 import pydantic as pdt
 
-from bikes.core import schemas
-from bikes.io import datasets, registries
-from bikes.jobs import base
+from mall.core import schemas
+from mall.io import datasets, registries
+from mall.jobs import base
 
 # %% JOBS
 
@@ -32,7 +32,7 @@ class InferenceJob(base.Job):
     # Model
     alias: str = "Champion"
     # Loader
-    loader: registries.LoaderKind = pdt.Field(registries.CustomLoader(), discriminator="KIND")
+    loader: registries.LoaderKind = pdt.Field(registries.BuiltinLoader(), discriminator="KIND")
 
     @T.override
     def run(self) -> base.Locals:

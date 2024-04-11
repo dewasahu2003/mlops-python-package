@@ -1,7 +1,7 @@
 # %% IMPORTS
 
-from bikes.core import metrics, models, schemas
-from bikes.utils import searchers, splitters
+from mall.core import metrics, models, schemas
+from mall.utils import searchers, splitters
 
 # %% SEARCHERS
 

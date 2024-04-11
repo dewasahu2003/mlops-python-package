@@ -1,7 +1,7 @@
 # %% IMPORTS
 
-from bikes.core import schemas
-from bikes.io import datasets
+from mall.core import schemas
+from mall.io import datasets
 
 # %% SCHEMAS
 

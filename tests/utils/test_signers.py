@@ -1,7 +1,7 @@
 # %% IMPORTS
 
-from bikes.core import schemas
-from bikes.utils import signers
+from mall.core import schemas
+from mall.utils import signers
 
 # %% SIGNERS
 

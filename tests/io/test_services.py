@@ -2,7 +2,7 @@
 
 import _pytest.logging as pl
 import mlflow
-from bikes.io import services
+from mall.io import services
 
 # %% SERVICES
 

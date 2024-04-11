@@ -3,21 +3,21 @@
 # PROJECT
 
 [tool.poetry]
-name = "bikes"
+name = "mall"
 version = "1.0.0"
-description = "Predict the number of bikes available."
+description = "Predict the number of mall available."
 repository = "https://github.com/fmind/mlops-python-package"
 documentation = "https://fmind.github.io/mlops-python-package/"
 authors = ["Médéric HURIER <github@fmind.dev>"]
 readme = "README.md"
 license = "CC BY"
 keywords = ["mlops", "python", "package"]
-packages = [{ include = "bikes", from = "src" }]
+packages = [{ include = "mall", from = "src" }]
 
 # SCRIPTS
 
 [tool.poetry.scripts]
-bikes = 'bikes.scripts:main'
+mall = 'mall.scripts:main'
 
 # DEPENDENCIES
 

@@ -9,8 +9,8 @@ import pandas as pd
 import pydantic as pdt
 from sklearn import model_selection
 
-from bikes.core import metrics, models, schemas
-from bikes.utils import splitters
+from mall.core import metrics, models, schemas
+from mall.utils import splitters
 
 # %% TYPES
 

@@ -6,11 +6,11 @@ import typing as T
 
 import pydantic as pdt
 
-from bikes.core import metrics as metrics_
-from bikes.core import models, schemas
-from bikes.io import datasets, registries, services
-from bikes.jobs import base
-from bikes.utils import signers, splitters
+from mall.core import metrics as metrics_
+from mall.core import models, schemas
+from mall.io import datasets, registries, services
+from mall.jobs import base
+from mall.utils import signers, splitters
 
 # %% JOBS
 

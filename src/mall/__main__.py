@@ -2,7 +2,7 @@
 
 # %% IMPORTS
 
-from bikes import scripts
+from mall import scripts
 
 # %% MAIN
 

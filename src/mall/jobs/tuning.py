@@ -6,10 +6,10 @@ import typing as T
 
 import pydantic as pdt
 
-from bikes.core import metrics, models, schemas
-from bikes.io import datasets, services
-from bikes.jobs import base
-from bikes.utils import searchers, splitters
+from mall.core import metrics, models, schemas
+from mall.io import datasets, services
+from mall.jobs import base
+from mall.utils import searchers, splitters
 
 # %% JOBS
 
@@ -40,7 +40,7 @@ class TuningJob(base.Job):
     metric: metrics.MetricKind = pdt.Field(metrics.SklearnMetric(), discriminator="KIND")
     # splitter
     splitter: splitters.SplitterKind = pdt.Field(
-        splitters.TimeSeriesSplitter(), discriminator="KIND"
+        splitters.TrainTestSplitter(), discriminator="KIND"
     )
     # Searcher
     searcher: searchers.SearcherKind = pdt.Field(

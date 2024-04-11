@@ -8,7 +8,7 @@ import typing as T
 
 import pydantic as pdt
 
-from bikes.io import services
+from mall.io import services
 
 # %% TYPES
 

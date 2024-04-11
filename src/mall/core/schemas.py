@@ -55,7 +55,7 @@ class InputsSchema(Schema):
 
     CustomerID: papd.Index[padt.UInt32] = pa.Field(ge=0)
     Genre: papd.Series[padt.STRING] = pa.Field()
-    Age: papd.Index[padt.UInt32] = pa.Field(ge=0)
+    Age: papd.Series[padt.UInt32] = pa.Field()
     Annual_Income: papd.Series[padt.Float16] = pa.Field(ge=0)
 
 
@@ -66,7 +66,7 @@ class TargetsSchema(Schema):
     """Schema for the project target."""
 
     CustomerID: papd.Index[padt.UInt32] = pa.Field(ge=0)
-    Spending_Score: papd.Index[padt.UInt32] = pa.Field(ge=0, le=100)
+    Spending_Score: papd.Series[padt.UInt32] = pa.Field(ge=0, le=100)
 
 
 Targets = papd.DataFrame[TargetsSchema]

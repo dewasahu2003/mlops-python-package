@@ -1,8 +1,8 @@
 # %% IMPORTS
 
 
-from bikes import jobs
-from bikes.io import datasets, registries, services
+from mall import jobs
+from mall.io import datasets, registries, services
 
 # %% JOBS
 

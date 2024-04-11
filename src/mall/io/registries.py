@@ -8,8 +8,8 @@ import typing as T
 import mlflow
 import pydantic as pdt
 
-from bikes.core import models, schemas
-from bikes.utils import signers
+from mall.core import models, schemas
+from mall.utils import signers
 
 # %% TYPES
 

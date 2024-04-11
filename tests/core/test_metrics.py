@@ -2,7 +2,7 @@
 
 
 import pytest
-from bikes.core import metrics, models, schemas
+from mall.core import metrics, models, schemas
 
 # %% METRICS
 

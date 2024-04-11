@@ -2,10 +2,10 @@
 
 # %% IMPORTS
 
-from bikes.jobs.inference import InferenceJob
-from bikes.jobs.promotion import PromotionJob
-from bikes.jobs.training import TrainingJob
-from bikes.jobs.tuning import TuningJob
+from mall.jobs.inference import InferenceJob
+from mall.jobs.promotion import PromotionJob
+from mall.jobs.training import TrainingJob
+from mall.jobs.tuning import TuningJob
 
 # %% TYPES
 

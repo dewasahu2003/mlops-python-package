@@ -3,7 +3,7 @@
 import os
 
 import omegaconf as oc
-from bikes.io import configs
+from mall.io import configs
 
 # %% PARSERS
 

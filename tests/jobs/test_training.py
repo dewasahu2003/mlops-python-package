@@ -1,9 +1,9 @@
 # %% IMPORTS
 
-from bikes import jobs
-from bikes.core import metrics, models
-from bikes.io import datasets, registries, services
-from bikes.utils import signers, splitters
+from mall import jobs
+from mall.core import metrics, models
+from mall.io import datasets, registries, services
+from mall.utils import signers, splitters
 
 # %% JOBS
 

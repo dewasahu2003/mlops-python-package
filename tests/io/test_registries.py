@@ -1,8 +1,8 @@
 # %% IMPORTS
 
-from bikes.core import models, schemas
-from bikes.io import registries, services
-from bikes.utils import signers
+from mall.core import models, schemas
+from mall.io import registries, services
+from mall.utils import signers
 
 # %% HELPERS
 

@@ -1,7 +1,7 @@
 # %% IMPORTS
 
-from bikes.core import schemas
-from bikes.utils import splitters
+from mall.core import schemas
+from mall.utils import splitters
 
 # %% SPLITTERS
 

@@ -8,7 +8,7 @@ import typing as T
 import pydantic as pdt
 from sklearn import compose, ensemble, pipeline, preprocessing
 
-from bikes.core import schemas
+from mall.core import schemas
 
 # %% TYPES
 
@@ -109,7 +109,7 @@ class BaselineSklearnModel(Model):
     _numericals: list[str] = [
         "Age",
         "Annual_Income",
-        "Spending_Score",
+    
     ]
     _categoricals: list[str] = [
         "Genre",

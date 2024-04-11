@@ -162,7 +162,7 @@ This config file instructs the program to start a `TrainingJob` with 2 parameter
 
 You can find all the parameters of your program in the `src/[package]/jobs/*.py` files.
 
-You can also print the full schema supported by this package using `poetry run bikes --schema`.
+You can also print the full schema supported by this package using `poetry run mall --schema`.
 
 ## Execution
 
