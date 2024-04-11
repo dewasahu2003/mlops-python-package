@@ -75,7 +75,7 @@ class TrainTestSplitter(Splitter):
     KIND: T.Literal["TrainTestSplitter"] = "TrainTestSplitter"
 
     shuffle: bool = False  # required (time sensitive)
-    test_size: int | float = 24 * 30 * 2  # 2 months
+    test_size: int | float =0.25 # 2 months
     random_state: int = 42
 
     @T.override

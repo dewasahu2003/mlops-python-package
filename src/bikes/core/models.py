@@ -107,26 +107,18 @@ class BaselineSklearnModel(Model):
     # private
     _pipeline: pipeline.Pipeline | None = None
     _numericals: list[str] = [
-        "yr",
-        "mnth",
-        "hr",
-        "holiday",
-        "weekday",
-        "workingday",
-        "temp",
-        "atemp",
-        "hum",
-        "windspeed",
-        "casual",
-        # "registered", # too correlated with target
+        "Age",
+        "Annual_Income",
+        "Spending_Score",
     ]
     _categoricals: list[str] = [
-        "season",
-        "weathersit",
+        "Genre",
     ]
 
     @T.override
-    def fit(self, inputs: schemas.Inputs, targets: schemas.Targets) -> "BaselineSklearnModel":
+    def fit(
+        self, inputs: schemas.Inputs, targets: schemas.Targets
+    ) -> "BaselineSklearnModel":
         # subcomponents
         categoricals_transformer = preprocessing.OneHotEncoder(
             sparse_output=False, handle_unknown="ignore"
@@ -140,7 +132,9 @@ class BaselineSklearnModel(Model):
             remainder="drop",
         )
         regressor = ensemble.RandomForestRegressor(
-            max_depth=self.max_depth, n_estimators=self.n_estimators, random_state=self.random_state
+            max_depth=self.max_depth,
+            n_estimators=self.n_estimators,
+            random_state=self.random_state,
         )
         # pipeline
         self._pipeline = pipeline.Pipeline(
@@ -149,7 +143,7 @@ class BaselineSklearnModel(Model):
                 ("regressor", regressor),
             ]
         )
-        self._pipeline.fit(X=inputs, y=targets[schemas.TargetsSchema.cnt])
+        self._pipeline.fit(X=inputs, y=targets[schemas.TargetsSchema.Spending_Score])
         return self
 
     @T.override
