@@ -111,7 +111,7 @@ class BaselineSklearnModel(Model):
         "Annual_Income",
     
     ]
-    _categoricals: list[str] = [
+    _categoricals: list[int] = [
         "Genre",
     ]
 

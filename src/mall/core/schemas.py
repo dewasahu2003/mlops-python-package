@@ -54,7 +54,7 @@ class InputsSchema(Schema):
     """Schema for the project inputs."""
 
     CustomerID: papd.Index[padt.UInt32] = pa.Field(ge=0)
-    Genre: papd.Series[padt.STRING] = pa.Field()
+    Genre: papd.Series[padt.UInt32] = pa.Field()
     Age: papd.Series[padt.UInt32] = pa.Field()
     Annual_Income: papd.Series[padt.Float16] = pa.Field(ge=0)
 
